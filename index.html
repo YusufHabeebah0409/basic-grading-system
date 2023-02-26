@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="disp" style="color:blue ; font-size: 50px;"></div>
+    <script>
+        var score =  Number(prompt("Enter Your score"))
+        if (score == "") {
+            // alert("Kindly Input Your Score")
+            document.getElementById("disp").innerText = "Kindly Enter Your Score"
+        } else if (score <= 39 && score > 0) {
+            // alert("F")
+            document.getElementById("disp").innerText = "F"
+        } else if (score > 39 && score <= 44) {
+            // alert("E")
+            document.getElementById("disp").innerText = "E"
+        } else if (score > 44 && score <= 49) {
+            // alert("D")
+            document.getElementById("disp").innerText = "D"
+        } else if (score > 49 && score <= 59) {
+            // alert("C")
+            document.getElementById("disp").innerText = "C"
+        } else if (score > 59 && score <= 69) {
+            // alert("B")
+            document.getElementById("disp").innerText = "B"
+        } else if (score > 69 && score <= 100) {
+            // alert("A")
+            document.getElementById("disp").innerText = "A"
+        } else if (typeof score === "string") {
+            // alert("Kindly Enter a Number")
+            document.getElementById("disp").innerText = "Kindly Enter a Number"
+        } else if (score <= 1) {
+            // alert("INVALID")
+            document.getElementById("disp").innerText = "Invalid"
+        } else {
+            // alert("INVALID")
+            document.getElementById("disp").innerText = "Invalid"
+        }
+    </script>
+</body>
+
+</html>
